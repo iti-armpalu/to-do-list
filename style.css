@@ -1,0 +1,169 @@
+.background {
+  background: linear-gradient(170deg, rgba(255,209,180,1) 27%, rgba(247,174,129,1) 64%, rgba(247,174,129,1) 100%);
+  min-height: 100vh;
+}
+
+.container {
+  padding-right: 45px;
+  padding-left: 45px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 992px ) {
+  .container {
+    width: 800px;
+  }
+}
+
+.heading-wrapper {
+  color: #7283ff;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 24px;
+}
+
+.todo-list-wrapper {
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 25px 50px 0 rgb(0 0 0 / 10%);
+  background-color: #fff;
+  font-family: 'Archivo Narrow', sans-serif;
+  color: #7283ff;
+}
+
+.title {
+  opacity: 0.5;
+}
+
+.date {
+  border-bottom: 1px solid rgb(135,150,254, 0.5);
+}
+
+.date h6 {
+  font-size: 18px;
+}
+
+.task-input-wrapper {
+  position: relative;
+  border-bottom: 1px solid rgb(135,150,254, 0.5);
+}
+
+.add-input {
+  background-color: transparent;
+  border: 1px solid #d0d0d0;
+  height: 28px;
+  border-radius: 2px;
+  color: #222;
+  font-size: 16px;
+  line-height: 1.375;
+}
+
+.add-button {
+  width: 28px;
+  height: 28px;
+  padding: 0 !important;
+  color: #7283ff;
+  background-color: transparent;
+  border: 0;
+
+}
+
+.add-button:hover {
+  color: #7283ff;
+  opacity: 0.5;
+}
+
+#todo-list > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#todo-list > div p {
+  flex: 1;
+  padding: 15px;
+  margin: 0 0 0 5px;
+  line-height: 1.2;
+
+}
+
+.task-content {
+  font-size: 18px;
+}
+
+.mark-complete {
+  height: 18px;
+  width: 18px;
+}
+
+.crossed-out {
+  text-decoration: line-through;
+}
+
+.delete-button {
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  color: #7283ff;
+  opacity: 0.5;
+}
+
+.delete-button:hover {
+  color: #7283ff;
+  opacity: 1;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+.todo-filter-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: 1px solid rgb(135,150,254, 0.5);
+  color: #d0d0d0;
+}
+
+.filter-button {
+  background-color: transparent;
+  color: #d0d0d0;
+}
+
+.filter-button:hover {
+  color: #7283ff;
+  opacity: 0.5;
+}
+
+.active {
+  color: #7283ff;
+}
+
+/* Custom checkbox */
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #7283ff !important;
+}
+
+.custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(114, 131, 255, 0.25)
+}
+
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+  background-color: #7283ff; 
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #7283ff !important;
+}
+
+.custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(114, 131, 255, 0.25)
+}
+
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+  background-color: #7283ff ; 
+}
+
+.custom-control-label::before {
+  background-color: transparent;
+  border: 1px solid #7283ff;
+}
